@@ -1,0 +1,297 @@
+/* @group HELPERS */
+
+.underline() {
+	text-decoration: underline;
+}
+
+.hide-underline() {
+	text-decoration: none;
+}
+
+.hide-border-radius() {
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.hide-border() {
+	border: 0 none;
+}
+
+.hide-shadow() {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.hide-outline {
+	outline: none;
+}
+
+.hide-background() {
+	background: transparent;
+}
+
+.hide-text-shadow() {
+	text-shadow: none;
+}
+
+.hide-bullets() {
+	list-style: none;
+}
+
+.disable-selection() {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.italic() {
+	font-style: italic;
+}
+
+.margin-center {
+	margin: 0 auto;
+}
+
+.text-left { 
+	text-align: left;
+}
+
+.text-right { 
+	text-align: right;
+}
+
+.text-center { 
+	text-align: center;
+}
+
+.color-1() {
+	color: @color-1;
+}
+
+.color-2() {
+	color: @color-2;
+}
+
+.text-shadow-1() {
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.relative() {
+	position: relative;
+}
+
+.absolute() {
+	position: absolute;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.block {
+	display: block !important;
+}
+
+.inline() {
+	display: inline;
+}
+
+.reset-dimensions() {
+	width: auto;
+	height: auto;
+}
+
+.reset-width() {
+	width: auto;
+}
+
+.hide-overflow() {
+	overflow: hidden;
+}
+
+.required {
+	color: red;
+}
+
+.hide() {
+	display: none !important;
+}
+
+.strike() {
+	text-decoration: line-through;
+}
+
+.dimensions(@width, @height) {
+	width: @width;
+	height: @height;
+}
+
+.bold() {
+	font-weight: bold;
+}
+
+.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
+	background: @color;
+	
+	background: -webkit-gradient(linear,
+	 left bottom,
+	 left top,
+	 color-stop(0, rgb(@start,@start,@start)),
+	 color-stop(1, rgb(@stop,@stop,@stop)));
+	 
+	background: -moz-linear-gradient(center bottom,
+	 rgb(@start,@start,@start) 0%,
+	 rgb(@stop,@stop,@stop) 100%);
+}
+
+.vertical-gradient(@color-1: #000, @color-2: #fff) {
+  background: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0, @color-1),
+    color-stop(0.92, @color-2)
+  );
+  
+  background: -moz-linear-gradient(center bottom,
+    @color-1 0%,
+    @color-2 92%
+  );
+}
+
+.border(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
+	border-top: solid 1px @top-color;
+	border-left: solid 1px @left-color;
+	border-right: solid 1px @right-color;
+	border-bottom: solid 1px @bottom-color;
+}
+
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+
+.round(@radius: 2px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius: @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius: @bottomleft;
+	-webkit-border-top-left-radius: @topleft;
+	-moz-border-radius-topright: @topright;
+	-moz-border-radius-bottomright: @bottomright;
+	-moz-border-radius-bottomleft: @bottomleft;
+	-moz-border-radius-topleft: @topleft;
+	border-top-right-radius: @topright;
+	border-bottom-right-radius: @bottomright;
+	border-bottom-left-radius: @bottomleft;
+	border-top-left-radius: @topleft;
+}
+
+.opacity(@opacity: 0.5) {
+	-moz-opacity: @opacity;
+	-khtml-opacity: @opacity;
+	-webkit-opacity: @opacity;
+	opacity: @opacity;
+}
+
+.transition-duration(@duration: 0.2s) {
+	-moz-transition-duration: @duration;
+	-webkit-transition-duration: @duration;
+	transition-duration: @duration;
+}
+
+.rotation(@deg:5deg){ 
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+
+.scale(@ratio:1.5){
+	-webkit-transform:scale(@ratio);
+ 	-moz-transform:scale(@ratio);
+	transform:scale(@ratio);
+}
+
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.inner-shadow(@color, @horizontal:0, @vertical:1px, @blur:2px, @alpha: 1) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur @color;
+  -moz-box-shadow: inset @horizontal @vertical @blur @color;
+	box-shadow: inset @horizontal @vertical @blur @color;
+}
+
+.outer-shadow(@color, @horizontal:0, @vertical:1px, @blur:2px, @alpha: 1) {
+  -webkit-box-shadow: @horizontal @vertical @blur @color;
+  -moz-box-shadow: @horizontal @vertical @blur @color;
+	box-shadow: @horizontal @vertical @blur @color;
+}
+
+.text-shadow(@color, @horizontal:0, @vertical:1px, @blur:2px) {
+	text-shadow: @horizontal @vertical @blur @color;
+}
+
+.columns(@width: 250px, @count: 0, @colgap: 50px, @rule-color: #EEE, @rule-style: solid, @rule-width: 1px) {
+	-moz-column-width: @width;
+	-moz-column-count: @count;
+	-moz-column-gap: @colgap;
+	-moz-column-rule-color: @rule-color;
+	-moz-column-rule-style: @rule-style;
+	-moz-column-rule-width: @rule-width;
+	-webkit-column-width: @width;
+	-webkit-column-count: @count;
+	-webkit-column-gap: @colgap;
+	-webkit-column-rule-color: @rule-color;
+	-webkit-column-rule-style: @rule-style;
+	-webkit-column-rule-width: @rule-width;
+	column-width: @width;
+	column-count: @count;
+	column-gap: @colgap;
+	column-rule-color: @rule-color;
+	column-rule-style: @rule-style;
+	column-rule-width: @rule-width;
+}
+
+.box-inside() {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.inner-outer-shadow(@inner-color, @inner-horizontal:0, @inner-vertical:1px, @inner-blur:2px, @outer-color, @outer-horizontal:0, @outer-vertical:1px, @outer-blur:2px) {
+  -webkit-box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
+  -moz-box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
+	box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
+}
+
+/* @end */
