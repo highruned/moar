@@ -1,5 +1,6 @@
-@column-count: 12;
-@column-width: 960 / @column-count;
+@page-width: 1070;
+@column-count: 10;
+@column-width: @page-width / @column-count;
 @gutter-buffer: 10px;
 
 @import "grid.less";
@@ -44,14 +45,6 @@
 	.column(10px, @column-width, @gutter-buffer);
 }
 
-.col-11 {
-	.column(11px, @column-width, @gutter-buffer);
-}
-
-.col-12 {
-	.column(12px, @column-width, @gutter-buffer);
-}
-
 .wrap-1 {
 	.gutter(1px, @column-width);
 }
@@ -90,12 +83,4 @@
 
 .wrap-10 {
 	.gutter(10px, @column-width);
-}
-
-.wrap-11 {
-	.gutter(11px, @column-width);
-}
-
-.wrap-12 {
-	.gutter(12px, @column-width);
 }

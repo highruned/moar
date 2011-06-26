@@ -1,25 +1,10 @@
-@column-count: 12;
-@column-width: 960 / @column-count;
-@gutter-buffer: 10px;
-
-.column(@index, @margin: @gutter-buffer, @float: left) {
+.column(@index, @column-width, @gutter-buffer, @float: left) {
 	width: (@column-width * @index) - (@gutter-buffer * 2);
-	margin: 0 @margin;
+	margin: 0 @gutter-buffer;
 	float: @float;
 }
 
-.gutter(@index, @float: left) {
+.gutter(@index, @column-width, @float: left) {
 	width: (@column-width * @index);
 	float: @float;
-}
-
-
-.row {
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.row .row {
-	width: auto;
-	display: inline-block;
 }
