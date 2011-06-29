@@ -11,7 +11,7 @@ Aint your grandma's CSS helper. This is LESS, and it's MOAR.
 
 * Grid System - dynamic column/gutter grid system, and common structures.
 	* 12 Column/960px (960 Grid System)
-	* Fluid/16px
+	* 16 Column/Fluid
 	* 10 Column/1070px (Less Framework)
 * Clearfix - standard clearfix ported to LESS.
 * Reset - resets all elements.
