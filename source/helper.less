@@ -173,17 +173,17 @@
 }
 
 .vertical-gradient(@color-1: #000, @color-2: #fff) {
-  background: -webkit-gradient(linear,
-    left bottom,
-    left top,
-    color-stop(0, @color-2),
-    color-stop(0.92, @color-1)
-  );
-  
-  background: -moz-linear-gradient(center bottom,
-    @color-2 0%,
-    @color-1 92%
-  );
+	background: -webkit-gradient(linear,
+		left bottom,
+		left top,
+		color-stop(0, @color-2),
+		color-stop(0.92, @color-1)
+	);
+	
+	background: -moz-linear-gradient(center bottom,
+		@color-2 0%,
+		@color-1 92%
+	);
 }
 
 .border(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
@@ -234,9 +234,9 @@
 }
 
 .rotation(@deg:5deg){ 
-  -webkit-transform: rotate(@deg);
-  -moz-transform: rotate(@deg);
-  transform: rotate(@deg);
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	transform: rotate(@deg);
 }
 
 .scale(@ratio:1.5){
@@ -246,20 +246,20 @@
 }
 
 .transition(@duration:0.2s, @ease:ease-out) {
-  -webkit-transition: all @duration @ease;
-  -moz-transition: all @duration @ease;
-  transition: all @duration @ease;
+	-webkit-transition: all @duration @ease;
+	-moz-transition: all @duration @ease;
+	transition: all @duration @ease;
 }
 
 .inner-shadow(@color, @horizontal:0, @vertical:1px, @blur:2px, @alpha: 1) {
-  -webkit-box-shadow: inset @horizontal @vertical @blur @color;
-  -moz-box-shadow: inset @horizontal @vertical @blur @color;
+	-webkit-box-shadow: inset @horizontal @vertical @blur @color;
+	-moz-box-shadow: inset @horizontal @vertical @blur @color;
 	box-shadow: inset @horizontal @vertical @blur @color;
 }
 
 .outer-shadow(@color, @horizontal:0, @vertical:1px, @blur:2px, @alpha: 1) {
-  -webkit-box-shadow: @horizontal @vertical @blur @color;
-  -moz-box-shadow: @horizontal @vertical @blur @color;
+	-webkit-box-shadow: @horizontal @vertical @blur @color;
+	-moz-box-shadow: @horizontal @vertical @blur @color;
 	box-shadow: @horizontal @vertical @blur @color;
 }
 
@@ -295,8 +295,8 @@
 }
 
 .inner-outer-shadow(@inner-color, @inner-horizontal:0, @inner-vertical:1px, @inner-blur:2px, @outer-color, @outer-horizontal:0, @outer-vertical:1px, @outer-blur:2px) {
-  -webkit-box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
-  -moz-box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
+	-webkit-box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
+	-moz-box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
 	box-shadow: @outer-horizontal @outer-vertical @outer-blur @outer-color, inset @inner-horizontal @inner-vertical @inner-blur @inner-color;
 }
 
