@@ -173,12 +173,14 @@ aside {
 	.column(2.5px, @column-width, @gutter-buffer);
 }
 ```
+
 1 column the width of the page with no gutter padding:
 ```
 aside {
 	.column(1px, @page-width, 0px);
 }
 ```
+
 1 column the width of the page divided by 4 subtracted by 1 with no gutter padding:
 ```
 aside {
