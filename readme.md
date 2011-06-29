@@ -109,84 +109,83 @@ None
 
 ### Vertical Gradient
 Add a vertical gradient from top to bottom:
-```
-a {
-	.vertical-gradient(#ededed, #c4c4c4);
-}
-```
+
+	a {
+		.vertical-gradient(#ededed, #c4c4c4);
+	}
+
 
 ### Standard clearfix
 Insert this code at the end of the parent element in which you would normally clearfix:
-```
-.clear-fix;
-&:after { .clear-fix-after; }
-```
+
+	.clear-fix;
+	&:after { .clear-fix-after; }
+
 
 ### Border radius
 Add a border radius to the left side of an anchor: 
-```
-a {
-	.border-radius(5px, 5px, 10px, 10px);
-}
-```
+
+	a {
+		.border-radius(5px, 5px, 10px, 10px);
+	}
+
 
 ### Outer shadow
 Add an outer shadow to an element:
-```
-a {
-	.outer-shadow(#000, 0px, 0px, 1px);
-}
-```
+
+	a {
+		.outer-shadow(#000, 0px, 0px, 1px);
+	}
+
 
 ### Inner/outer shadow
 Add an inner and outer shadow to an element:
-```
-a {
-	.inner-outer-shadow(#bbb, 0, 0, 5px, #bbb, 0, 0, 5px);
-}
-```
+
+	a {
+		.inner-outer-shadow(#bbb, 0, 0, 5px, #bbb, 0, 0, 5px);
+	}
+
 
 ### Text shadow
 Add a text shadow to an element:
-```
-a {
-	.text-shadow(#fff, 1px, 1px, 1px);
-}
-```
+
+	a {
+		.text-shadow(#fff, 1px, 1px, 1px);
+	}
+
 
 ### Grid
-Page wrapper:
-```
-.page {
-	.wrap-12;
+Page wrapper: 
 
-	article {
-		.col-12;
+	.page {
+		.wrap-12;
+	
+		article {
+			.col-12;
+		}
 	}
-}
-```
 
 ### Custom Grid One-offs
 2.5 columns:
-```
-aside {
-	.column(2.5px, @column-width, @gutter-buffer);
-}
-```
+
+	aside {
+		.column(2.5px, @column-width, @gutter-buffer);
+	}
+
 
 1 column the width of the page with no gutter padding:
-```
-aside {
-	.column(1px, @page-width, 0px);
-}
-```
+
+	aside {
+		.column(1px, @page-width, 0px);
+	}
+
 
 1 column the width of the page divided by 4 subtracted by 1 with no gutter padding:
-```
-aside {
-	.column(1px, @page-width / 4 - 1, 0px);
-}
-```
+
+	aside {
+		.column(1px, @page-width / 4 - 1, 0px);
+	}
+
 
 ## Projects using moar
 
