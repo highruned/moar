@@ -60,6 +60,14 @@
 	font-style: italic;
 }
 
+.bold() {
+	font-weight: bold;
+}
+
+.strike() {
+	text-decoration: line-through;
+}
+
 .margin-center {
 	margin: 0 auto;
 }
@@ -74,14 +82,6 @@
 
 .text-center { 
 	text-align: center;
-}
-
-.color-1() {
-	color: @color-1;
-}
-
-.color-2() {
-	color: @color-2;
 }
 
 .text-shadow-1() {
@@ -137,16 +137,12 @@
 	overflow: hidden;
 }
 
-.required {
-	color: red;
-}
-
 .hide() {
 	display: none !important;
 }
 
-.strike() {
-	text-decoration: line-through;
+.show() {
+	display: block !important;
 }
 
 .dimensions(@width, @height) {
@@ -154,22 +150,16 @@
 	height: @height;
 }
 
-.bold() {
-	font-weight: bold;
-}
-
-.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
-	background: @color;
-	
+.bw-gradient(@start: 0, @stop: 255) {
 	background: -webkit-gradient(linear,
 	 left bottom,
 	 left top,
-	 color-stop(0, rgb(@start, @start, @start)),
-	 color-stop(1, rgb(@stop, @stop, @stop)));
+	 color-stop(0, rgb(@stop, @stop, @stop)),
+	 color-stop(1, rgb(@start, @start, @start)));
 	 
 	background: -moz-linear-gradient(center bottom,
-	 rgb(@start,@start,@start) 0%,
-	 rgb(@stop,@stop,@stop) 100%);
+	 rgb(@start, @start, @start) 0%,
+	 rgb(@stop, @stop, @stop) 100%);
 }
 
 .vertical-gradient(@color-1: #000, @color-2: #fff) {
@@ -191,12 +181,6 @@
 	border-left: solid 1px @left-color;
 	border-right: solid 1px @right-color;
 	border-bottom: solid 1px @bottom-color;
-}
-
-.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
-	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-	-moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-	box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
 }
 
 .round(@radius: 2px) {
@@ -233,13 +217,13 @@
 	transition-duration: @duration;
 }
 
-.rotation(@deg:5deg) { 
+.rotation(@deg: 5deg) { 
 	-webkit-transform: rotate(@deg);
 	-moz-transform: rotate(@deg);
 	transform: rotate(@deg);
 }
 
-.scale(@ratio:1.5) {
+.scale(@ratio: 1.5) {
 	-webkit-transform: scale(@ratio);
  	-moz-transform: scale(@ratio);
 	transform: scale(@ratio);
