@@ -1,0 +1,135 @@
+/* @group GRID-FLUID-16 */
+.wrap-1 {
+  width: 6.25%;
+}
+.wrap-2 {
+  width: 12.5%;
+}
+.wrap-3 {
+  width: 18.75%;
+}
+.wrap-4 {
+  width: 25%;
+}
+.wrap-5 {
+  width: 31.25%;
+}
+.wrap-6 {
+  width: 37.50%;
+}
+.wrap-7 {
+  width: 43.75%;
+}
+.wrap-8 {
+  width: 50%;
+}
+.wrap-9 {
+  width: 56.25%;
+}
+.wrap-10 {
+  width: 62.5%;
+}
+.wrap-11 {
+  width: 68.75%;
+}
+.wrap-12 {
+  width: 75%;
+}
+.wrap-13 {
+  width: 81.25%;
+}
+.wrap-14 {
+  width: 87.5%;
+}
+.wrap-15 {
+  width: 93.75;
+}
+.wrap-16 {
+  width: 100%;
+}
+.wrap-1,
+.wrap-2,
+.wrap-3,
+.wrap-4,
+.wrap-5,
+.wrap-6,
+.wrap-7,
+.wrap-8,
+.wrap-9,
+.wrap-10,
+.wrap-11,
+.wrap-12,
+.wrap-13,
+.wrap-14,
+.wrap-15,
+.wrap-16 {
+  float: left;
+}
+.col-1 {
+  width: 6.25%;
+}
+.col-2 {
+  width: 10.5%;
+}
+.col-3 {
+  width: 16.75%;
+}
+.col-4 {
+  width: 23%;
+}
+.col-5 {
+  width: 29.25%;
+}
+.col-6 {
+  width: 35.50%;
+}
+.col-7 {
+  width: 41.75%;
+}
+.col-8 {
+  width: 48%;
+}
+.col-9 {
+  width: 54.25%;
+}
+.col-10 {
+  width: 60.5%;
+}
+.col-11 {
+  width: 66.75%;
+}
+.col-12 {
+  width: 73%;
+}
+.col-13 {
+  width: 79.25%;
+}
+.col-14 {
+  width: 85.5%;
+}
+.col-15 {
+  width: 91.75;
+}
+.col-16 {
+  width: 98%;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-13,
+.col-14,
+.col-15,
+.col-16 {
+  float: left;
+  padding: 0 1%;
+}
+/* @end */

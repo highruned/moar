@@ -1,0 +1,110 @@
+/* @group GRID-768-12 */
+.col-1 {
+  width: 44px;
+  margin: 0 10px;
+  float: left;
+}
+.col-2 {
+  width: 108px;
+  margin: 0 10px;
+  float: left;
+}
+.col-3 {
+  width: 172px;
+  margin: 0 10px;
+  float: left;
+}
+.col-4 {
+  width: 236px;
+  margin: 0 10px;
+  float: left;
+}
+.col-5 {
+  width: 300px;
+  margin: 0 10px;
+  float: left;
+}
+.col-6 {
+  width: 364px;
+  margin: 0 10px;
+  float: left;
+}
+.col-7 {
+  width: 428px;
+  margin: 0 10px;
+  float: left;
+}
+.col-8 {
+  width: 492px;
+  margin: 0 10px;
+  float: left;
+}
+.col-9 {
+  width: 556px;
+  margin: 0 10px;
+  float: left;
+}
+.col-10 {
+  width: 620px;
+  margin: 0 10px;
+  float: left;
+}
+.col-11 {
+  width: 684px;
+  margin: 0 10px;
+  float: left;
+}
+.col-12 {
+  width: 748px;
+  margin: 0 10px;
+  float: left;
+}
+.wrap-1 {
+  width: 64px;
+  float: left;
+}
+.wrap-2 {
+  width: 128px;
+  float: left;
+}
+.wrap-3 {
+  width: 192px;
+  float: left;
+}
+.wrap-4 {
+  width: 256px;
+  float: left;
+}
+.wrap-5 {
+  width: 320px;
+  float: left;
+}
+.wrap-6 {
+  width: 384px;
+  float: left;
+}
+.wrap-7 {
+  width: 448px;
+  float: left;
+}
+.wrap-8 {
+  width: 512px;
+  float: left;
+}
+.wrap-9 {
+  width: 576px;
+  float: left;
+}
+.wrap-10 {
+  width: 640px;
+  float: left;
+}
+.wrap-11 {
+  width: 704px;
+  float: left;
+}
+.wrap-12 {
+  width: 768px;
+  float: left;
+}
+/* @end */

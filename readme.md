@@ -1,11 +1,15 @@
 # LESS is MOAR
 
-Aint your grandma's CSS helper. This is LESS, and it's MOAR.
+Ain't your grandma's CSS helper. This is LESS, and it's MOAR.
 
 ## Getting started
 
-* Clone the repo: `git clone git@github.com:ericmuyser/moar.git`
+* Download or clone the repo: `git clone git@github.com:ericmuyser/moar.git`
+* Add the .less files from `source` to your `Less.app` file list.
 * Build away!
+
+The `source` directory contains the LESS framework.  
+The `build` directory contains CSS which **can** be built, but cannot possibly contain all the LESS methods and options.
 
 ## Features
 
@@ -159,13 +163,17 @@ Page wrapper:
 
 	.page {
 		.wrap-12;
+		
+		aside {
+			.col-2;
+		}
 	
 		article {
-			.col-12;
+			.col-10;
 		}
 	}
 
-### Custom Grid One-offs
+#### Grid One-offs
 2.5 columns:
 
 	aside {
@@ -189,5 +197,5 @@ Page wrapper:
 
 ## Projects using moar
 
-* [uTelevision.app](https://github.com/ericmuyser/jquery-ui-theme-cocoa)
+* [uTelevision.app](https://github.com/ericmuyser/utelevision.app)
 * [jquery-ui-theme-cocoa](https://github.com/ericmuyser/jquery-ui-theme-cocoa)
